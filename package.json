@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "flow-with-yarn-workspaces",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "lerna exec -- babel src -d lib"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.53.1",
+    "lerna": "^2.0.0"
+  }
+}
